@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact form using twitter bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Imanol Aranzadi" content="Simple way to use google drive forms as a contact form in your web">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      background-image: url('img/sneaker_mesh_fabric.png');
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+    
+    #logo{
+      position: absolute;
+      right: 10%;
+      top: -25px;
+      width: 10%;
+    }
+
+    #circulitos {
+      width: 30%;
+    }
+	
+	 #forma {
+		position: relative;
+		top: 150px;
+	 }
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 3%;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+    }
+
+
+    
+    </style>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="#">Inicio</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    
+
+
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row span6 offset4" id="forma">
+        <div class="ss-form"><form action="https://docs.google.com/forms/d/1dXQdm-NOWVleRnRrsneYSup650GhRX9TVfHquZYiE-M/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+			<div class="ss-form-question errorbox-good">
+			<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1830729656"><div class="ss-q-title">name
+			<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+			</div>
+			<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+			<input type="text" name="entry.1830729656" value="" class="ss-q-short" id="entry_1830729656" dir="auto" aria-required="true">
+			</div></div></div> <div class="ss-form-question errorbox-good">
+			<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1793391302"><div class="ss-q-title">phone
+			<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+			</div>
+			<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+			<input type="text" name="entry.1793391302" value="" class="ss-q-short" id="entry_1793391302" dir="auto" aria-required="true">
+			</div></div></div> <div class="ss-form-question errorbox-good">
+			<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1034219105"><div class="ss-q-title">e-mail
+			</div>
+			<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+			<input type="text" name="entry.1034219105" value="" class="ss-q-short" id="entry_1034219105" dir="auto">
+			</div></div></div> <div class="ss-form-question errorbox-good">
+			<div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1642381428"><div class="ss-q-title">How can we help you?
+			<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+			</div>
+			<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+			<textarea name="entry.1642381428" rows="8" cols="0" class="ss-q-long" id="entry_1642381428" dir="auto" aria-required="true"></textarea>
+			</div></div></div>
+			<input type="hidden" name="draftResponse" value="[]
+			">
+			<input type="hidden" name="pageHistory" value="0">
+
+
+			<div class="ss-item ss-navigate"><div class="ss-form-entry">
+			<input type="submit" name="submit" value="Submit" id="ss-submit">
+			
+
+			<script type='text/javascript' src='/static/forms/client/js/2885241393-formviewer_prd.js'></script>
+			<script type="text/javascript">_initFormViewer();</script></div>
+      </div><!-- /.row -->
+
+      
+      <br><br><br><br>
+
+      
+      
+
+
+      <!-- FOOTER -->
+      <footer>
+        <br><br><br><br><br>
+        <p class="pull-right"></p>
+        <p>&copy; 2013 Company, Inc. </p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    -->
+
+  </body>
+</html>
+
+
+
